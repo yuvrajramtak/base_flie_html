@@ -1,0 +1,107 @@
+{
+   "editor.mouseWheelZoom": true,
+   "workbench.editor.enablePreview": false,
+   "[html]": {
+     "editor.defaultFormatter": "vscode.html-language-features"
+   },
+"editor.minimap.enabled": false,
+   "editor.bracketPairColorization.enabled": true,
+   "editor.tokenColorCustomizations": {
+     "comments": {
+       "foreground": "#ff8fd6",
+       "fontStyle": "bold italic"
+     }
+   },
+   "php.validate.executablePath": "/opt/lampp/bin/php",
+ 
+   // 🌈 Colorful Comments Extension Settings
+   "colorful-comments.multilineComments": true,
+   "colorful-comments.highlightPlainText": false,
+   "colorful-comments.tags": [
+     {
+       "tag": "!",
+       "color": "#FF2D00",
+       "strikethrough": false,
+       "backgroundColor": "transparent",
+       "bold": false,
+       "italic": false
+     },
+     {
+       "tag": "?",
+       "color": "#0076FF",
+       "strikethrough": false,
+       "backgroundColor": "transparent",
+       "bold": false,
+       "italic": false
+     },
+     {
+       "tag": "//",
+       "color": "#474747",
+       "strikethrough": true,
+       "backgroundColor": "transparent",
+       "bold": false,
+       "italic": false
+     },
+     {
+       "tag": "^",
+       "color": "#EAF622",
+       "strikethrough": false,
+       "backgroundColor": "transparent",
+       "bold": false,
+       "italic": false
+     },
+     {
+       "tag": "*",
+       "color": "#28FF00",
+       "strikethrough": false,
+       "backgroundColor": "transparent",
+       "bold": false,
+       "italic": false
+     },
+     {
+       "tag": "&",
+       "color": "#FF06A0",
+       "strikethrough": false,
+       "backgroundColor": "transparent",
+       "bold": false,
+       "italic": false
+     },
+     {
+       "tag": "~",
+       "color": "#BE00FF",
+       "strikethrough": false,
+       "backgroundColor": "transparent",
+       "bold": false,
+       "italic": false
+     },
+     {
+       "tag": "todo",
+       "color": "#FF8C00",
+       "strikethrough": false,
+       "backgroundColor": "transparent",
+       "bold": false,
+       "italic": false
+     }
+   ],
+"workbench.productIconTheme": "macos-modern",
+   "github.copilot.enable": {
+    "*": true,
+    "plaintext": false,
+    "markdown": false,
+    "scminput": false,
+    "php": false,
+    "html": true
+  },
+   "workbench.preferredHighContrastColorTheme": "One Monokai",
+   "[javascript]": {
+     "editor.defaultFormatter": "vscode.typescript-language-features"
+   },
+   "workbench.activityBar.location": "top",
+"liveServer.settings.donotShowInfoMsg": true,
+"workbench.colorTheme": "One Monokai",
+"workbench.iconTheme": "vscode-icons",
+"[css]": {
+  "editor.defaultFormatter": "vscode.css-language-features"
+},
+"livePreview.defaultPreviewPath": "/Animation_css_.html/task3.html"
+ }

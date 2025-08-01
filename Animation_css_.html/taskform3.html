@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Styled Form</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f4f6f9;
+      margin: 0;
+      padding: 0;
+    }
+
+    form {
+      max-width: 600px;
+      margin: 50px auto;
+      background: #ffffff;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    h1, h2 {
+      color: #333;
+      text-align: center;
+    }
+
+    label {
+      display: block;
+      margin: 15px 0 5px;
+      font-weight: bold;
+      color: #444;
+    }
+
+    input[type="text"],
+    input[type="password"] {
+      width: calc(100% - 20px);
+      padding: 10px;
+      margin-bottom: 10px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      transition: border-color 0.3s ease;
+    }
+
+    input[type="text"]:focus,
+    input[type="password"]:focus {
+      border-color: #007BFF;
+      outline: none;
+    }
+
+    input[type="submit"] {
+      background: #007BFF;
+      color: white;
+      border: none;
+      padding: 12px 25px;
+      font-size: 16px;
+      border-radius: 5px;
+      cursor: pointer;
+      margin-top: 20px;
+      transition: background 0.3s ease;
+    }
+
+    input[type="submit"]:hover {
+      background: #0056b3;
+    }
+
+    .question-group {
+      margin-bottom: 20px;
+      padding-bottom: 15px;
+      border-bottom: 1px solid #eee;
+    }
+  </style>
+</head>
+<body>
+
+  <form>
+    <h1>Post Message</h1>
+
+    <label for="enter-message">Enter Message:</label>
+    <input type="text" id="enter-message" name="enter-message" value="Pizza party at my place tonight" />
+
+    <h2>Fill any number of questions and answers</h2>
+
+    <div class="question-group">
+      <label for="question1">Enter Question 1:</label>
+      <input type="text" id="question1" name="question1" value="" />
+      <label for="context1">Context 1:</label>
+      <input type="password" id="context1" name="context1" value="" />
+    </div>
+
+    <div class="question-group">
+      <label for="question2">Enter Question 2:</label>
+      <input type="text" id="question2" name="question2" value="" />
+      <label for="context2">Context 2:</label>
+      <input type="password" id="context2" name="context2" value="" />
+    </div>
+
+    <div class="question-group">
+      <label for="question3">Enter Question 3:</label>
+      <input type="text" id="question3" name="question3" />
+      <label for="context3">Context 3:</label>
+      <input type="password" id="context3" name="context3" />
+    </div>
+
+    <div class="question-group">
+      <label for="question4">Enter Question 4:</label>
+      <input type="text" id="question4" name="question4" />
+      <label for="context4">Context 4:</label>
+      <input type="password" id="context4" name="context4" />
+    </div>
+
+    <div class="question-group">
+      <label for="question5">Enter Question 5:</label>
+      <input type="text" id="question5" name="question5" />
+      <label for="context5">Context 5:</label>
+      <input type="password" id="context5" name="context5" />
+    </div>
+
+    <label for="threshold">Enter Threshold (&gt; 0 and &lt; Q&A entered):</label>
+    <input type="password" id="threshold" name="threshold" value="" />
+
+    <input type="submit" value="Submit" />
+  </form>
+
+</body>
+</html>
+

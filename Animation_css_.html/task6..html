@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Transport Categories</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f8f9fa;
+      color: #333;
+      padding: 20px;
+      max-width: 800px;
+      margin: auto;
+    }
+
+    h1 {
+      color: #0056b3;
+      text-align: center;
+    }
+
+    p {
+      font-size: 1.1em;
+    }
+
+    ul {
+      margin-left: 20px;
+      padding-left: 20px;
+    }
+
+    li {
+      margin: 6px 0;
+    }
+
+    .category {
+      list-style-type: square;
+    }
+
+    .subcategory-circle {
+      list-style-type: circle;
+    }
+
+    .subcategory-square {
+      list-style-type: square;
+    }
+
+    .subcategory-disc {
+      list-style-type: disc;
+    }
+  </style>
+</head>
+
+<body>
+  <h1>Welcome!</h1>
+  <p>Hello User!<br>
+    The following list uses different styles of bullet points for better organization.
+  </p>
+
+  <ul class="category">
+    <li>Cars:
+      <ul class="subcategory-circle">
+        <li>BMW
+          <ul class="subcategory-square">
+            <li>BMW X5</li>
+            <li>BMW X7</li>
+            <li>BMW Z4</li>
+            <li>BMW M2</li>
+          </ul>
+        </li>
+        <li>Audi
+          <ul class="subcategory-square">
+            <li>Audi Q8</li>
+            <li>Audi Q7 2020</li>
+            <li>Audi Q3</li>
+            <li>Audi A7</li>
+          </ul>
+        </li>
+        <li>Mercedes</li>
+        <li>Jaguar</li>
+        <li>Lamborghini</li>
+      </ul>
+    </li>
+
+    <li>Bikes:
+      <ul class="subcategory-disc">
+        <li>Apache</li>
+        <li>KTM</li>
+        <li>R15</li>
+        <li>Ducati</li>
+        <li>Harley-Davidson</li>
+      </ul>
+    </li>
+
+    <li>Aeroplanes:
+      <ul class="subcategory-circle">
+        <li>Air India</li>
+        <li>Indigo</li>
+        <li>Vistara</li>
+        <li>GoAir</li>
+        <li>SpiceJet</li>
+      </ul>
+    </li>
+
+    <li>Trains</li>
+    <li>Ships</li>
+  </ul>
+</body>
+
+</html>

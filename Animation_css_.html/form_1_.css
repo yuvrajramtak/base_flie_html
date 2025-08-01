@@ -1,0 +1,64 @@
+   body {
+            background-color: #f0f4f8;
+            font-family: 'Arial Rounded MT Bold', Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        .form-container {
+            background-color: #ffffff;
+            border-radius: 12px;
+            box-shadow: 0 4px 16px rgba(0,0,0,0.08);
+            max-width: 400px;
+            margin: 40px auto;
+            padding: 32px 24px;
+            font-family: 'Arial Rounded MT Bold', Arial, sans-serif;
+        }
+        .form-container h2 {
+            color: #2a5298;
+            margin-bottom: 24px;
+            text-align: center;
+            font-family: 'Arial Rounded MT Bold', Arial, sans-serif;
+        }
+        label {
+            display: block;
+            margin-bottom: 8px;
+            color: #2a5298;
+            font-weight: bold;
+        }
+        input[type="text"],
+        input[type="email"],
+        input[type="password"] {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 18px;
+            border: 1px solid #b0c4de;
+            border-radius: 6px;
+            font-family: inherit;
+            font-size: 1em;
+            background-color: #f7fafc;
+            color: #333;
+        }
+        .checkbox-container {
+            display: flex;
+            align-items: center;
+            margin-bottom: 18px;
+        }
+        .checkbox-container input[type="checkbox"] {
+            margin-right: 8px;
+        }
+        input[type="submit"] {
+            width: 100%;
+            padding: 12px;
+            background: linear-gradient(90deg, #2a5298 0%, #1e3c72 100%);
+            color: #fff;
+            border: none;
+            border-radius: 6px;
+            font-size: 1.1em;
+            font-family: inherit;
+            cursor: pointer;
+            font-weight: bold;
+            transition: background 0.3s;
+        }
+        input[type="submit"]:hover {
+            background: linear-gradient(90deg, #1e3c72 0%, #2a5298 100%);
+        }

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JavaScript Demo</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f0f0f0;
+      margin: 0;
+      padding: 20px;
+    }
+    #output {
+      margin-top: 20px;
+      padding: 10px;
+      background: #fff;
+      border-radius: 5px;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
+    button {
+      padding: 10px 20px;
+      font-size: 16px;
+      margin-right: 10px;
+    }
+  </style>
+</head>
+<body>
+  <h1>JavaScript Demo</h1>
+  <button id="showAlert">Show Alert</button>
+  <button id="changeText">Change Text</button>
+  <button id="addItem">Add Item</button>
+  <div id="output">Welcome! Click the buttons above.</div>
+  <ul id="itemList"></ul>
+  <script>
+    document.getElementById('showAlert').onclick = function() {
+      alert('JavaScript is working!');
+    };
+
+    document.getElementById('changeText').onclick = function() {
+      document.getElementById('output').textContent = 'The text has been changed!';
+    };
+
+    let count = 1;
+    document.getElementById('addItem').onclick = function() {
+      const ul = document.getElementById('itemList');
+      const li = document.createElement('li');
+      li.textContent = 'Item ' + count;
+      ul.appendChild(li);
+      count++;
+    };
+
+    // Extra: Change background color on double click
+    document.body.onclick = function() {
+      document.body.style.background = 'red';
+      document.getElementById('output').textContent = 'Background color changed!';
+    };
+  </script>
+</body>
+</html>

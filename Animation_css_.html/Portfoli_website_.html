@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Yuvraj's Portfolio</title>
+  <link rel="shortcut icon" href="fire_fox_.png" type="image/x-icon">
+  <style>
+    * {
+      box-sizing: border-box;
+      scroll-behavior: smooth;
+    }
+
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(to right, #020024, #090979, #00d4ff);
+      color: white;
+    }
+
+    .navbar {
+      display: flex;
+      justify-content: center;
+      background: rgba(0, 0, 0, 0.4);
+      padding: 15px;
+      border-radius: 12px;
+      margin: 30px auto;
+      max-width: 700px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+    }
+
+    .navbar li {
+      list-style: none;
+      margin: 0 20px;
+    }
+
+    .navbar a {
+      text-decoration: none;
+      color: white;
+      font-size: 18px;
+      padding: 10px 15px;
+      border-radius: 8px;
+      transition: background 0.3s ease, color 0.3s ease;
+    }
+
+    .navbar a:hover,
+    .navbar a.active {
+      background-color: rgba(255, 255, 255, 0.2);
+      color: #00ffff;
+    }
+
+    .profile-image {
+      display: block;
+      margin: 40px auto 20px auto;
+      width: 150px;
+      height: 150px;
+      object-fit: cover;
+      border-radius: 50%;
+      border: 4px solid white;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+    }
+
+    h1,
+    h2 {
+      text-align: center;
+      margin-top: 20px;
+    }
+
+    p {
+      text-align: center;
+      font-size: 18px;
+      max-width: 700px;
+      margin: 20px auto;
+    }
+
+    section {
+      padding: 40px 20px;
+    }
+
+    .projects {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+    }
+
+    .project-card {
+      background: rgba(255, 255, 255, 0.1);
+      border-radius: 12px;
+      padding: 20px;
+      max-width: 300px;
+      text-align: center;
+      transition: transform 0.3s ease;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+    }
+
+    .project-card:hover {
+      transform: translateY(-5px);
+      background: rgba(255, 255, 255, 0.2);
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: rgba(0, 0, 0, 0.3);
+      margin-top: 40px;
+    }
+
+    a.button {
+      display: inline-block;
+      margin-top: 15px;
+      padding: 10px 20px;
+      background-color: #00ffff;
+      color: #000;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: background 0.3s ease;
+    }
+
+    a.button:hover {
+      background-color: #00bcd4;
+    }
+  </style>
+</head>
+
+<body>
+
+  <ul class="navbar">
+    <li><a class="active" href="#home">Home</a></li>
+    <li><a href="#projects">Projects</a></li>
+    <li><a href="#contact">Contact</a></li>
+    <li><a href="#about">About</a></li>
+    <li><a href="myseif_portfoli_10_.html">Myself</a></li>
+  </ul>
+
+  <section id="home">
+    <img src="fire_fox_.png" alt="Yuvraj Ram Tak" class="profile-image">
+    <h1>Welcome to My Portfolio</h1>
+    <p>Hi! I'm Yuvraj, a passionate web developer who loves creating responsive and interactive websites. Explore my
+      work below!</p>
+  </section>
+
+  <section id="projects">
+    <h2>My Projects</h2>
+    <div class="projects">
+      <div class="project-card">
+        <h3>Weather App</h3>
+        <p>A real-time weather forecast app using HTML, CSS, & Bootstrap .</p>
+        <a class="button" href="Weather_App_.html">View</a>
+      </div>
+      <div class="project-card">
+        <h3>To-Do List</h3>
+        <p>Track your tasks with this simple to-do list app built with JS.</p>
+        <a class="button" href="Login _form_.html">View</a>
+      </div>
+      <div class="project-card">
+        <h3>Portfolio Website</h3>
+        <p>This very site! A personal portfolio showcasing my skills.</p>
+        <a class="button" href="p_10_portfolio_.html">View</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="about">
+    <h2>About Me</h2>
+    <p>I’m a self-taught web developer always eager to learn and build new things. I work with HTML, CSS, JavaScript,
+      and some frameworks. I enjoy both front-end and back-end work, and I'm constantly improving my skills.</p>
+  </section>
+
+  <section id="contact">
+    <h2>Contact Me</h2>
+    <p>Feel free to reach out to collaborate, work together, or just say hi!</p>
+    <p>Email: <a href="mailto:yuvraj@example.com" style="color:#00ffff;">yuvraj@example.com</a></p>
+  </section>
+
+  <footer>
+    &copy; 2025 Yuvraj Ram Tak | All rights reserved.
+  </footer>
+
+</body>
+
+</html>

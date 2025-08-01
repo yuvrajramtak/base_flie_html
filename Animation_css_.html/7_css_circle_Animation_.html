@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Stylish CSS Circle Animation</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background: linear-gradient(135deg, #f8f8f8, #e0e0e0);
+      font-family: 'Segoe UI', sans-serif;
+      height: 100vh;
+      overflow: hidden;
+    }
+
+    h1 {
+      text-align: center;
+      margin-top: 40px;
+      color: #333;
+      font-size: 2em;
+    }
+
+    .circle {
+      width: 200px;
+      height: 200px;
+      border-radius: 50%;
+      background-color: red;
+      animation: colorChange 4s infinite ease-in-out, pulse 2s infinite ease-in-out;
+      position: fixed;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      box-shadow: 0 0 30px rgba(0, 0, 0, 0.2), 0 0 20px rgba(255, 0, 0, 0.4);
+    }
+
+    @keyframes colorChange {
+      0% {
+        background-color: red;
+        box-shadow: 0 0 30px rgba(255, 0, 0, 0.4);
+      }
+
+      25% {
+        background-color: rgb(255, 0, 170);
+        box-shadow: 0 0 30px rgba(255, 0, 170, 0.4);
+      }
+
+      50% {
+        background-color: blue;
+        box-shadow: 0 0 30px rgba(0, 0, 255, 0.4);
+      }
+
+      75% {
+        background-color: yellow;
+        box-shadow: 0 0 30px rgba(255, 255, 0, 0.4);
+      }
+
+      100% {
+        background-color: green;
+        box-shadow: 0 0 30px rgba(0, 255, 0, 0.4);
+      }
+    }
+
+    @keyframes pulse {
+      0%, 100% {
+        transform: translate(-50%, -50%) scale(1);
+      }
+
+      50% {
+        transform: translate(-50%, -50%) scale(1.05);
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <h1>CSS Circle Animation</h1>
+  <div class="circle"></div>
+
+</body>
+
+</html>
+
+

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hover_text_Reveal</title>
+    <style>
+        body {
+            background-color: rgb(25, 25, 25);
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center; 
+        }
+        h1 {
+            
+            font-size: 15rem;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+        h1{
+            color: transparent;
+            -webkit-text-stroke:3px darkmagenta ;
+            position: relative;
+
+        }
+        h1::before{
+            content: "HOVER";
+            position: absolute;
+            width: 0;
+            height: 100%;
+            overflow: hidden;
+            color: darkmagenta;
+            border-right: 8px solid darkmagenta;
+            transition: 1s ease-in-out;
+        }
+        h1:hover::before{
+            width: 100%;
+            filter:drop-shadow(0 0 25px darkmagenta);
+        }
+    </style>
+</head>
+<body>
+    <h1>HOVER</h1>
+</body>
+</html>

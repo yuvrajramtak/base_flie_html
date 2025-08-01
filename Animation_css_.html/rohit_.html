@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Happy Birthday Rohit!</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background: linear-gradient(to right, #ffecd2, #fcb69f);
+      font-family: 'Comic Sans MS', cursive, sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      height: 100vh;
+      overflow: hidden;
+      text-align: center;
+    }
+
+    h1 {
+      font-size: 2.8em;
+      color: #ff4081;
+      margin-bottom: 10px;
+    }
+
+    p {
+      font-size: 1.3em;
+      color: #333;
+      padding: 0 10px;
+    }
+
+    button {
+      padding: 15px 30px;
+      font-size: 1.1em;
+      margin-top: 20px;
+      background-color: #ff4081;
+      color: white;
+      border: none;
+      border-radius: 10px;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+
+    button:hover {
+      background-color: #e91e63;
+    }
+
+    .message {
+      display: none;
+      font-size: 1.8em;
+      color: #4CAF50;
+      margin-top: 20px;
+      animation: fadeIn 2s forwards;
+      padding: 0 10px;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+
+    .confetti {
+      position: absolute;
+      width: 10px;
+      height: 10px;
+      background-color: #ff4081;
+      animation: fall 3s linear infinite;
+      top: -10px;
+    }
+
+    @keyframes fall {
+      to {
+        transform: translateY(110vh) rotate(360deg);
+      }
+    }
+
+    /* 🌐 MEDIA QUERY for small screens (like Vivo Y56 ~360px) */
+    @media (max-width: 400px) {
+      h1 {
+        font-size: 2em;
+      }
+
+      p {
+        font-size: 1.1em;
+      }
+
+      button {
+        padding: 12px 20px;
+        font-size: 1em;
+      }
+
+      .message {
+        font-size: 1.4em;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <h1>🎂 Happy Birthday Rohit tak! 🎉</h1>
+  <p>Wishing you a day full of love, joy, and cake!</p>
+  <button onclick="showMessage()">Click for a surprise 🎁</button>
+  <div class="message" id="message">🎈 You're Amazing, Rohit! 🎈</div>
+
+  <!-- 🎵 Happy Birthday Song -->
+  <audio id="birthdaySong" src="https://www.fesliyanstudios.com/play-mp3/387" preload="auto"></audio>
+
+  <script>
+    function showMessage() {
+      document.getElementById("message").style.display = "block";
+      createConfetti();
+      playMusic();
+    }
+
+    function createConfetti() {
+      for (let i = 0; i < 100; i++) {
+        let confetti = document.createElement('div');
+        confetti.classList.add('confetti');
+        confetti.style.left = Math.random() * 100 + 'vw';
+        confetti.style.backgroundColor = `hsl(${Math.random() * 360}, 70%, 60%)`;
+        confetti.style.animationDuration = 2 + Math.random() * 3 + 's';
+        confetti.style.opacity = Math.random();
+        confetti.style.borderRadius = '50%';
+        document.body.appendChild(confetti);
+
+        setTimeout(() => confetti.remove(), 5000);
+      }
+    }
+
+    function playMusic() {
+      const audio = document.getElementById("birthdaySong");
+      audio.play().catch(() => {
+        console.log("Autoplay blocked — tap again to play music.");
+      });
+    }
+  </script>
+
+</body>
+</html>
+

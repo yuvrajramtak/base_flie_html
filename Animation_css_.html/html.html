@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Sadie Table Log Example</title>
+    <style>
+        table {
+            border-collapse: collapse;
+            width: 60%;
+            margin: 20px auto;
+            font-size: 18px;
+            background-color: #f9f9f9;
+        }
+        th, td {
+            border: 1px solid #333;
+            padding: 12px 18px;
+            text-align: center;
+        }
+        th {
+            background-color: #4a90e2;
+            color: #fff;
+            font-size: 20px;
+        }
+        tr:nth-child(even) td {
+            background-color: #e3f2fd;
+        }
+        tr:nth-child(odd) td {
+            background-color: #ffffff;
+        }
+    </style> 
+</head>
+<body>
+    <h1 style="text-align:center;">Sadie Table Log</h1>
+    <table>
+        <tr>
+            <th colspan="4">Log Table</th>
+        </tr>
+        <tr>
+            <th>Timestamp</th>
+            <th>User</th>
+            <th colspan="2">Action</th>
+        </tr>
+        <tr>
+            <td rowspan="2">2024-06-10 10:00</td>
+            <td>Sadie</td>
+            <td>Login</td>
+            <td>Success</td>
+        </tr>
+        <tr>
+            <td>Sadie</td>
+            <td colspan="2">Viewed Dashboard</td>
+        </tr>
+        <tr>
+            <td>2024-06-10 10:05</td>
+            <td>Sadie</td>
+            <td colspan="2">Logged Out</td>
+        </tr>
+        <!-- Added new log entry -->
+        <tr>
+            <td>2024-06-10 10:10</td>
+            <td>Sadie</td>
+            <td colspan="2">Password Changed</td>
+        </tr>
+    </table>
+</body>
+</html>

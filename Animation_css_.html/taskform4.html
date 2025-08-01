@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Contact Form</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f3f7fa;
+      margin: 0;
+      padding: 0;
+    }
+
+    h1 {
+      text-align: center;
+      color: #2c3e50;
+      margin-top: 30px;
+    }
+
+    form {
+      background-color: #ffffff;
+      width: 600px;
+      margin: 30px auto;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+      border-top: 8px solid #3498db;
+    }
+
+    h2 {
+      color: #34495e;
+      margin-bottom: 20px;
+    }
+
+    label {
+      font-weight: bold;
+      color: #2d3436;
+      display: block;
+      margin-top: 15px;
+    }
+
+    input[type="text"] {
+      width: 100%;
+      padding: 10px;
+      margin-top: 5px;
+      border-radius: 6px;
+      border: 1px solid #ccc;
+      font-size: 16px;
+      transition: border-color 0.3s ease;
+    }
+
+    input[type="text"]:focus {
+      border-color: #3498db;
+      outline: none;
+    }
+
+    input[type="submit"] {
+      background-color: #3498db;
+      color: white;
+      border: none;
+      padding: 12px 25px;
+      font-size: 16px;
+      border-radius: 5px;
+      cursor: pointer;
+      margin-top: 20px;
+      transition: background-color 0.3s ease;
+    }
+
+    input[type="submit"]:hover {
+      background-color: #2980b9;
+    }
+
+    .note {
+      color: #888;
+      font-style: italic;
+      margin-top: 20px;
+      font-size: 14px;
+    }
+
+  </style>
+</head>
+<body>
+
+  <h1>Contact Details</h1>
+
+  <form>
+    <h2>Please enter your personal details:</h2>
+
+    <label for="first-name"><strong><ins>F</ins></strong>irst Name:* </label>
+    <input type="text" id="first-name" name="first-name" />
+
+    <label for="last-name"><strong><ins>L</ins></strong>ast Name:* </label>
+    <input type="text" id="last-name" name="last-name" />
+
+    <label for="street-address">Street <strong><ins>A</ins></strong>ddress:* </label>
+    <input type="text" id="street-address" name="street-address" />
+
+    <label for="city"><strong><ins>T</ins></strong>own/City:* </label>
+    <input type="text" id="city" name="city" />
+
+    <label for="postcode">Post<strong><ins>C</ins></strong>ode/ZIP:* </label>
+    <input type="text" id="postcode" name="postcode" />
+
+    <label for="telephone">Tele<strong><ins>P</ins></strong>hone:* </label>
+    <input type="text" id="telephone" name="telephone" />
+
+    <label for="mobile"><strong><ins>M</ins></strong>obile:* </label>
+    <input type="text" id="mobile" name="mobile" />
+
+    <label for="email"><strong><ins>E</ins></strong>mail Address:* </label>
+    <input type="text" id="email" name="email" />
+
+    <div class="note">Fields marked * are required</div>
+
+    <input type="submit" value="Submit" />
+  </form>
+
+</body>
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Circle Game Animation</title>
+  <style>
+    body {
+      margin: 0;
+      background: #222;
+      overflow: hidden;
+    }
+
+    #game-area {
+      width: 100vw;
+      height: 100vh;
+      position: relative;
+    }
+
+    .circle {
+      width: 60px;
+      height: 60px;
+      background-color: #00f2ff;
+      border-radius: 50%;
+      position: absolute;
+      top: 100px;
+      left: 100px;
+      transition: top 0.5s ease, left 0.5s ease;
+      box-shadow: 0 0 20px #00f2ff;
+    }
+  </style>
+</head>
+<body>
+  <div id="game-area">
+    <div class="circle" id="circle"></div>
+  </div>
+
+  <script>
+    const circle = document.getElementById('circle');
+    const gameArea = document.getElementById('game-area');
+
+    gameArea.addEventListener('click', (e) => {
+      const x = e.clientX - 30; // center the circle
+      const y = e.clientY - 30;
+      circle.style.left = x + 'px';
+      circle.style.top = y + 'px';
+    });
+  </script>
+</body>
+</html>
+

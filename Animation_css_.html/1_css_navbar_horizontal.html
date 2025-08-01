@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+ 
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Styled Navbars</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 30px;
+      background: #020024;
+      background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(9, 9, 121, 1) 35%, rgba(0, 212, 255, 1) 100%);
+
+    }
+
+    .navbar {
+      list-style-type: none;
+      margin: 20px auto;
+      padding: 0;
+      overflow: hidden;
+      max-width: 600px;
+      border-radius: 12px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .bar-1 {
+      background: linear-gradient(45deg, #04AA6D, #3ccf9e);
+    }
+
+    .bar-2 {
+      background: linear-gradient(45deg, #2196F3, #6ec6ff);
+    }
+
+    .bar-3 {
+      background: linear-gradient(45deg, #FF5722, #ff8a50);
+    }
+
+    .navbar li {
+      float: left;
+      width: 25%;
+    }
+
+    .navbar li a {
+      display: block;
+      color: white;
+      text-align: center;
+      padding: 14px 0;
+      text-decoration: none;
+      transition: background 0.3s ease, color 0.3s ease;
+      border-right: 1px solid rgba(255, 255, 255, 0.2);
+    }
+
+    .navbar li:last-child a {
+      border-right: none;
+    }
+
+    .navbar li a:hover {
+      background-color: rgba(255, 255, 255, 0.2);
+    }
+
+    .navbar li a.active {
+      background-color: rgba(0, 0, 0, 0.2);
+      font-weight: bold;
+    }
+  </style>
+</head>
+
+<body>
+
+  <ul class="navbar bar-1">
+    <li><a class="active" href="#home">Home</a></li>
+    <li><a href="#news">News</a></li>
+    <li><a href="#contact">Contact</a></li>
+    <li><a href="#about">About</a></li>
+  </ul>
+
+  <ul class="navbar bar-2">
+    <li><a href="#home">Home</a></li>
+    <li><a class="active" href="#news">News</a></li>
+    <li><a href="#contact">Contact</a></li>
+    <li><a href="#about">About</a></li>
+  </ul>
+
+  <ul class="navbar bar-3">
+    <li><a href="#home">Home</a></li>
+    <li><a href="#news">News</a></li>
+    <li><a class="active" href="#contact">Contact</a></li>
+    <li><a href="#about">About</a></li>
+  </ul>
+
+</body>
+
+</html>

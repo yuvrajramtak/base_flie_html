@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form Layout</title>
+    <style>
+        body {
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+
+        form {
+            border: 10px solid gray;
+            width: 600px;
+            margin: 0 auto;
+            padding: 15px;
+            background-color: cornsilk;
+        }
+
+        .form-group {
+            margin-bottom: 18px;
+        }
+
+        label {
+            font-size: 20px;
+            display: block;
+            margin-bottom: 6px;
+        }
+
+        input,
+        textarea,
+        datalist {
+            font-size: 18px;
+            width: 100%;
+            border: 2px solid black;
+            padding: 5px;
+            box-sizing: border-box;
+        }
+
+        .buttons {
+            text-align: center;
+            padding-top: 20px;
+        }
+
+        input[type="button"] {
+            width: 100px;
+            margin: 0 10px;
+            font-size: 18px;
+        }
+      
+    </style>
+</head>
+
+<body>
+
+    <form>
+          
+        <div class="form-group">
+            <label for="field1">Field 1</label>
+            <input type="text" id="field1" name="Field1" value="text1">
+        </div>
+        <div class="form-group">
+            <label for="field2">Field 2</label>
+            <input type="text" id="field2" name="Field2" value="text2">
+        </div>
+        <div class="form-group">
+            <label for="field3">Field 3</label>
+            <input list="field3list" value="combo1" id="field3">
+            <datalist id="field3list">
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+            </datalist>
+        </div>
+        <div class="form-group">
+            <label for="field4">Field 4</label>
+            <input type="text" id="field4" name="Field4" value="text3">
+        </div>
+        <div class="form-group">
+            <label for="field5">Field 5</label>
+            <input type="text" id="field5" name="Field5" value="text4">
+        </div>
+        <div class="form-group">
+            <label for="field6">Field 6</label>
+            <textarea name="text" id="field6" rows="4" cols="70">Text Area</textarea>
+        </div>
+        <div class="buttons">
+            <input type="button" value="OK">
+            <input type="button" value="CANCEL">
+        </div>
+    </form>
+
+</body>
+
+</html>
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form Table Layout</title>
+    <style>
+        body {
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+
+        form {
+            border: 10px solid gray;
+            width: 600px;
+            margin: 0 auto;
+            padding: 15px;
+            background-color: cornsilk;
+        }
+
+        table {
+            width: 100%;
+        }
+
+        td {
+            padding: 10px;
+            vertical-align: top;
+        }
+
+        label {
+            font-size: 20px;
+        }
+
+        input,
+        textarea,
+        datalist {
+            font-size: 18px;
+            width: 100%;
+            border: 2px solid black;
+            padding: 5px;
+        }
+
+        .buttons {
+            text-align: center;
+            padding-top: 20px;
+        }
+
+        input[type="button"] {
+            width: 100px;
+            margin: 0 10px;
+            font-size: 18px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <form>
+        <table>
+            <tr>
+                <td><label for="field1">Field 1</label></td>
+                <td><label for="field2">Field 2</label></td>
+            </tr>
+            <tr>
+                <td><input type="text" id="field1" name="Field1" value="text1"></td>
+                <td><input type="text" id="field2" name="Field2" value="text2"></td>
+            </tr>
+
+            <tr>
+                <td colspan="2"><label for="field3">Field 3</label></td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <input list="field3" value="combo1" id="field3">
+                    <datalist id="field3">
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                    </datalist>
+                </td>
+            </tr>
+
+            <tr>
+                <td colspan="2"><label for="field4">Field 4</label></td>
+            </tr>
+            <tr>
+                <td colspan="2"><input type="text" id="field4" name="Field4" value="text3"></td>
+            </tr>
+
+            <tr>
+                <td colspan="2"><label for="field5">Field 5</label></td>
+            </tr>
+            <tr>
+                <td colspan="2"><input type="text" id="field5" name="Field5" value="text4"></td>
+            </tr>
+
+            <tr>
+                <td colspan="2"><label for="field6">Field 6</label></td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <textarea name="text" rows="4" cols="70">Text Area</textarea>
+                </td>
+            </tr>
+
+            <tr>
+                <td colspan="2" class="buttons">
+                    <input type="button" value="OK">
+                    <input type="button" value="CANCEL">
+                </td>
+            </tr>
+        </table>
+    </form>
+
+</body>
+
+</html>
