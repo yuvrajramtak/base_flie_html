@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Styled Table Grid</title>
+  <style>
+    table {
+      border-collapse: collapse;
+      margin: 40px auto;
+      border: 3px solid black;
+    }
+
+    td {
+      border: 2px solid black;
+      width: 100px;
+      height: 100px;
+      text-align: center;
+      vertical-align: middle;
+      font-family: Arial, sans-serif;
+      font-weight: bold;
+      background-color: #f9f9f9;
+    }
+
+    /* Color different blocks for clarity */
+    .item1  { background-color: #ffcccc; }
+    .item2  { background-color: #ccffcc; }
+    .item3  { background-color: #ccccff; }
+    .item4  { background-color: #ffffcc; }
+    .item5  { background-color: #ffccff; }
+    .item6  { background-color: #ccffff; }
+    .item7  { background-color: #ffccee; }
+    .item8  { background-color: #e6ccff; }
+    .item9  { background-color: #ccffe6; }
+    .item10 { background-color: #ffd9b3; }
+    .item11 { background-color: #cce0ff; }
+    .item12 { background-color: #d1ffd1; }
+    .item13 { background-color: #f5ccff; }
+    .item14 { background-color: #cceeff; }
+    .item15 { background-color: #f2e6ff; }
+    .item16 { background-color: #fff0b3; }
+    .item17 { background-color: #d6f5d6; }
+    .item18 { background-color: #ffe6cc; }
+  </style>
+</head>
+<body>
+
+  <table>
+    <tr>
+      <td class="item1" rowspan="2">Item 1</td>
+      <td class="item2" colspan="3">Item 2</td>
+    </tr>
+    <tr>
+      <td class="item3" colspan="2">Item 3</td>
+      <td class="item4">Item 4</td>
+    </tr>
+    <tr>
+      <td class="item5">Item 5</td>
+      <td class="item6">Item 6</td>
+      <td class="item7">Item 7</td>
+      <td class="item8">Item 8</td>
+    </tr>
+    <tr>
+      <td class="item10" rowspan="2">Item 10</td>
+      <td class="item11" colspan="2" rowspan="2">Item 11</td>
+      <td class="item9">Item 9</td>
+    </tr>
+    <tr>
+      <td class="item14">Item 14</td>
+    </tr>
+    <tr>
+      <td class="item15">Item 15</td>
+      <td class="item16">Item 16</td>
+      <td class="item17">Item 17</td>
+      <td class="item18">Item 18</td>
+    </tr>
+  </table>
+
+</body>
+</html>

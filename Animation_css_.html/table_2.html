@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Styled Merged Cells Table</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(135deg, #f0f4f8, #ffffff);
+      padding: 60px 20px;
+    }
+
+    table {
+      margin: auto;
+      border-collapse: collapse;
+      min-width: 500px;
+      background: #ffffff;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+      border-radius: 12px;
+      overflow: hidden;
+    }
+
+    caption {
+      caption-side: top;
+      font-style: italic;
+      font-size: 1.4em;
+      color: #444;
+      padding: 15px;
+      font-weight: bold;
+    }
+
+    th, td {
+      padding: 14px 20px;
+      text-align: center;
+      border: 1px solid #ccc;
+      transition: background 0.3s;
+    }
+
+    th {
+      background: linear-gradient(to right, #46e54ec5, #6365);
+      color: white;
+      font-weight: 600;
+    }
+
+    td {
+      background-color: #f9fafb;
+      font-size: 1.05em;
+      color: #333;
+    }
+
+    tr:hover td {
+      background-color: #eef2ff;
+    }
+
+    th[rowspan], th[colspan] {
+      background-color: #4338ca;
+    }
+
+    @media (max-width: 600px) {
+      table {
+        font-size: 0.9em;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <table>
+    <caption>A test table with merged cells</caption>
+    <tr>
+      <th rowspan="2"></th>
+      <th colspan="2">Average</th>
+      <th rowspan="2">Red<br>eyes</th>
+    </tr>
+    <tr>
+      <th>height</th>
+      <th>weight</th>
+    </tr>
+    <tr>
+      <td>Males</td>
+      <td>1.9</td>
+      <td>0.003</td>
+      <td>40%</td>
+    </tr>
+    <tr>
+      <td>Females</td>
+      <td>1.7</td>
+      <td>0.002</td>
+      <td>43%</td>
+    </tr>
+  </table>
+
+</body>
+</html>
+
