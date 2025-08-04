@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Bootstrap & AOS Extended Example</title>
+
+  <!-- Bootstrap CSS (external) -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+
+  <!-- AOS CSS (external) -->
+  <link href="https://cdn.rawgit.com/michalsnik/aos/2.3.4/dist/aos.css" rel="stylesheet" />
+  
+  <style>
+    body {
+      padding-top: 4rem;
+    }
+    .feature-icon {
+      font-size: 3rem;
+      color: #0d6efd;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navbar with links -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top shadow-sm">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">MySite</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" 
+              data-bs-target="#navbarNav" aria-controls="navbarNav" 
+              aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
+          <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <header class="bg-primary text-white text-center py-5" data-aos="zoom-in" data-aos-duration="1000">
+    <div class="container">
+      <h1>Welcome to My Bootstrap & AOS Website</h1>
+      <p class="lead">Engaging animations as you scroll down!</p>
+      <a href="#features" class="btn btn-light btn-lg mt-3" data-aos="fade-up" data-aos-delay="500">
+        Explore Features
+      </a>
+    </div>
+  </header>
+
+  <!-- Features Section -->
+  <section id="features" class="py-5">
+    <div class="container">
+      <div class="row text-center">
+        <div class="col-md-4 mb-4" data-aos="fade-right" data-aos-duration="800">
+          <div class="card shadow h-100">
+            <div class="card-body">
+              <div class="feature-icon mb-3">&#9733;</div>
+              <h5 class="card-title">Feature One</h5>
+              <p class="card-text">AOS animations make your website more interactive.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-duration="800" data-aos-delay="300">
+          <div class="card shadow h-100">
+            <div class="card-body">
+              <div class="feature-icon mb-3">&#9881;</div>
+              <h5 class="card-title">Feature Two</h5>
+              <p class="card-text">Bootstrap combined with AOS delivers responsive, animated UI.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 mb-4" data-aos="fade-left" data-aos-duration="800" data-aos-delay="600">
+          <div class="card shadow h-100">
+            <div class="card-body">
+              <div class="feature-icon mb-3">&#128640;</div>
+              <h5 class="card-title">Feature Three</h5>
+              <p class="card-text">Easy to integrate and customize animations on scroll.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Call to Action Section -->
+  <section class="bg-light py-5" data-aos="flip-up" data-aos-duration="1200">
+    <div class="container text-center">
+      <h2>Ready to Start Your Project?</h2>
+      <p>Contact us today to discuss your requirements and bring your ideas to life with animated Bootstrap pages.</p>
+      <a href="contact.html" class="btn btn-primary btn-lg">Contact Us</a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-dark text-white text-center py-3">
+    <p>&copy; 2025 MySite. All rights reserved.</p>
+  </footer>
+
+  <!-- Bootstrap Bundle JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+  <!-- AOS JS -->
+  <script src="https://cdn.rawgit.com/michalsnik/aos/2.3.4/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      once: true, // animation happens only once when scrolling down
+      mirror: false // animations do not happen when scrolling up
+    });
+  </script>
+</body>
+</html>
+
